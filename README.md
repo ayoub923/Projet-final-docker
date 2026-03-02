@@ -75,3 +75,29 @@ Plus la valeur est faible, meilleure est la conservation de l’information.
 
 ```bash
 docker build -t city-project .
+```
+## Exécuter toutes les méthodes
+
+```bash
+docker run city-project
+```
+
+## Exécuter une méthode spécifique
+
+```bash
+docker run city-project pca
+docker run city-project tsne
+```
+
+# Résultats Obtenus
+
+Exemple de sortie :
+
+=== Dimensionality Reduction Evaluation ===
+
+PCA Trustworthiness        : 0.9335
+PCA Reconstruction Error   : 0.2036
+
+t-SNE Trustworthiness      : 0.9825
+
+Evaluation completed.
